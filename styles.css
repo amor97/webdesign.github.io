@@ -1,0 +1,270 @@
+/* general style */
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 16px;
+  padding: 0;
+  margin: 0;
+}
+
+/* style for main headings */
+
+h1 {
+  font-size: 2em;
+  font-family: "Roboto Mono", monospace;
+  text-align: center;
+  letter-spacing: 1px;
+}
+
+/* Navigation style */
+
+.nav-bar {
+  display: flex;
+  align-items: center; /* Vertically center items */
+  border: 1px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 30px;
+  background-color: antiquewhite;
+  position: relative;
+}
+
+.logo {
+  margin-right: auto;
+}
+
+.logo img {
+  width: 25px;
+  height: auto;
+}
+
+/* list style */
+
+.nav-bar ul {
+  margin: 0;
+  padding: 0;
+}
+
+/* list items style */
+
+.nav-bar ul li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Link style */
+
+a {
+  text-decoration: none;
+  color: black;
+  font-family: "Montserrat", sans-serif;
+  font-size: 1.5em;
+}
+
+a:hover {
+  text-decoration: underline;
+  color: lightslategray;
+  transition: color 0.3 ease;
+}
+
+/* palette section style */
+
+.palette-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f1faee;
+  padding: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* secondary headings */
+
+h2 {
+  font-family: "Poppins", sans-serif;
+  align-self: flex-start;
+  margin-right: auto;
+}
+
+/* divs style */
+
+.color-1 {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  background-color: #37ff8b;
+  transition: transform 0.3s ease;
+}
+
+.color-2 {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  background-color: rgb(221, 161, 94);
+}
+
+.color-3 {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  background-color: #a8dadc;
+}
+
+.color-4 {
+  border: 1px solid black;
+  border-radius: 10px;
+  padding: 20px;
+  margin: 20px;
+  width: 300px;
+  background-color: rgb(254, 250, 224);
+}
+
+.color-1,
+.color-2,
+.color-3,
+.color-4 {
+  flex: 1;
+  max-width: calc(50% - 40px);
+  transition: transform 0.3s ease;
+  position: relative;
+}
+
+.color-1 p,
+.color-2 p,
+.color-3 p,
+.color-4 p {
+  margin: 0;
+  position: relative;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.color-1:hover,
+.color-2:hover,
+.color-3:hover,
+.color-4:hover {
+  transform: scale(1.2);
+  background-color: #fff;
+  box-shadow: 2px 2px 2px #000;
+  cursor: pointer;
+}
+
+/* second section style */
+
+.font-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f1faee;
+  padding: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.font-container p {
+  margin: 5px 0;
+}
+
+h3 {
+  font-family: "Roboto", sans-serif;
+  text-decoration: underline;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+/* button section */
+
+.button-container {
+  border: 1px solid black;
+  border-radius: 10px;
+  background-color: #f1faee;
+  padding: 30px;
+  padding-top: 5px;
+  margin: 10px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.flat-button {
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+
+.flat-button:hover {
+    background-color: #2980b9;
+}
+
+.skeuomorphic-button {
+    background-color: #e67e22;
+    color: #fff;
+    border: 2px solid #d35400;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease, border-color 0.3s ease;
+}
+
+.skeuomorphic-button:hover {
+    background-color: #d35400;
+    border-color: #e67e22;
+}
+
+.three-d-button {
+    background-color: #27ae60;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+
+.three-d-button:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+}
